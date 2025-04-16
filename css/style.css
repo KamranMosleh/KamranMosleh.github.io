@@ -23,7 +23,7 @@ nav ul li {
 
 nav ul li a {
     text-decoration: none; /* Remove underlines from links */
-    color: #2c3e50; /* A nice dark blue color */
+    color: #2c4550; /* A nice dark blue color */
     font-weight: bold; /* Make the text bold */
     padding: 10px 20px; /* Add padding inside the box */
     background-color: #f0f0f0; /* Light gray background */
@@ -44,6 +44,13 @@ img {
     height: auto;
     display: block;
     margin: 10px 0;
+}
+
+.homepage-banner {
+    max-width: 60%; /* Set the banner width to 60% of its container */
+    height: auto;    /* Maintain aspect ratio */
+    display: block;   /* Ensure it behaves as a block-level element */
+    margin: 20px auto; /* Center the banner with top and bottom margin */
 }
 
 footer {
