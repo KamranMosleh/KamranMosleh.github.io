@@ -13,11 +13,25 @@ nav ul {
     list-style: none;
     padding: 0;
     margin: 0;
+    text-align: center; /* Center the list items */
 }
 
 nav ul li {
     display: inline;
-    margin-right: 10px;
+    margin: 0 15px; /* Add some horizontal spacing */
+}
+
+nav ul li a {
+    text-decoration: none; /* Remove underlines from links */
+    color: #333; /* Default link color */
+    padding: 10px 20px; /* Add padding inside the box */
+    background-color: #f0f0f0; /* Light gray background */
+    border-radius: 5px; /* Optional: Rounded corners */
+    font-size: 1.2em; /* Larger font size */
+}
+
+nav ul li a:hover {
+    background-color: #ddd; /* Slightly darker gray on hover */
 }
 
 main {
