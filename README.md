@@ -4,62 +4,88 @@ KamranMosleh.github.io/
 
 ├── index.html         (Homepage)
 
+├── images/
+│   └── homepage_banner.png
+
 ├── projects/
 
 │   ├── index.html
 
-│   ├── project1.html
+│   ├── newprojects/
 
-│   ├── project2.html
+│   │   ├── index.html
 
-│   └── images/
+│   │   ├── [project1.html]
 
-│       ├── project1_image1.jpg
+│   │   └── images/
 
-│       └── ...
+│   └── oldprojects/
+
+│       ├── index.html
+
+│       ├── [projectA.html]
+
+│       └── images/
 
 ├── research/
 
 │   ├── index.html
 
-│   ├── topic1.html
+│   ├── digitalization_in_engineering/
 
-│   ├── topic2.html
+│   │   ├── index.html
 
-│   └── images/
+│   │   ├── iot_shm/
 
-│       ├── topic1_image1.png
+│   │   │   ├── index.html
 
-│       └── ...
+│   │   │   ├── [iot_shm_topic1.html]
 
-├── language-learning/
+│   │   │   └── images/
+
+│   │   ├── bim_lca/
+
+│   │   │   ├── index.html
+
+│   │   │   ├── [bim_lca_topic1.html]
+
+│   │   │   └── images/
+
+│   │   └── ai_ml/
+
+│   │       ├── index.html
+
+│   │       ├── [ai_ml_topic1.html]
+
+│   │       └── images/
+
+│   └── structural_analysis/
+
+│       ├── index.html
+
+│       ├── [sa_topic1.html]
+
+│       └── images/
+
+├── other_thoughts/
 
 │   ├── index.html
 
-│   ├── language1.html
+│   ├── digital_societies/
 
-│   ├── language2.html
+│   │   ├── index.html
 
-│   └── images/
+│   │   ├── [ds_thought1.html]
 
-│       ├── language1_image1.gif
+│   │   └── images/
 
-│       └── ...
+│   └── semantics_language/
 
-├── other-thoughts/
+│       ├── index.html
 
-│   ├── index.html
+│       ├── [sl_thought1.html]
 
-│   ├── thought1.html
-
-│   ├── thought2.html
-
-│   └── images/
-
-│       ├── thought1_image1.jpeg
-
-│       └── ...
+│       └── images/
 
 └── css/
-
     └── style.css
