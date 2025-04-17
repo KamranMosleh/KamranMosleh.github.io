@@ -26,7 +26,7 @@ nav ul li a {
     color: #2c4550;
     font-weight: bold;
     padding: 8px 15px; /* Reduced padding */
-    background-color: #f0f0f0;
+    background-color: #f0f0f0; /* Default button background */
     border-radius: 3px; /* Reduced border-radius */
     font-size: 0.9em; /* Reduced font size */
     border: 1px solid #ccc;
@@ -44,7 +44,7 @@ main {
     max-width: 60%; /* Reduced banner size */
     height: auto;
     display: block;
-    margin: 10px auto 15px; /* Adjusted bottom margin */
+    margin: 10px auto 15px;
 }
 
 footer {
@@ -134,7 +134,6 @@ footer {
 
 .button-link {
     padding: 8px 15px;
-    background-color: #f0f0f0;
     color: #333;
     border: 1px solid #ccc;
     border-radius: 3px;
@@ -148,6 +147,19 @@ footer {
 
 .button-link:hover {
     background-color: #ddd;
+}
+
+/* Specific background colors for each level */
+.level-1 .button-link {
+    background-color: #e0f7fa; /* Light Cyan */
+}
+
+.level-2-container .button-link {
+    background-color: #f0f4c3; /* Light Lime */
+}
+
+.level-3 .button-link {
+    background-color: #fce4ec; /* Light Pink */
 }
 
 .hierarchy-diagram h3,
