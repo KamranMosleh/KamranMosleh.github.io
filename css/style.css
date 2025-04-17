@@ -41,10 +41,10 @@ main {
 }
 
 .homepage-banner {
-    max-width: 80%; /* Slightly wider banner */
+    max-width: 60%; /* Reduced banner size */
     height: auto;
     display: block;
-    margin: 10px auto 20px; /* Reduced top margin, added bottom margin */
+    margin: 10px auto 15px; /* Adjusted bottom margin */
 }
 
 footer {
