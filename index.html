@@ -6,20 +6,89 @@
     <title>Kamran Mosleh</title>
     <link rel="icon" href="favicon.ico" type="image/x-icon">
     <link rel="stylesheet" href="css/style.css">
+    <style>
+        /* Inline styles for basic layout - consider moving to style.css for more complex styling */
+        .hierarchy-diagram {
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            gap: 20px;
+            margin-bottom: 30px;
+        }
+
+        .level-1 {
+            display: flex;
+            gap: 30px;
+        }
+
+        .level-2 {
+            display: flex;
+            gap: 20px;
+        }
+
+        .level-3 {
+            display: flex;
+            gap: 15px;
+        }
+
+        .button-link {
+            padding: 10px 20px;
+            background-color: #f0f0f0;
+            color: #333;
+            border: 1px solid #ccc;
+            border-radius: 5px;
+            text-decoration: none;
+            font-weight: bold;
+            text-align: center;
+            min-width: 150px; /* Adjust as needed */
+        }
+
+        .button-link:hover {
+            background-color: #ddd;
+        }
+    </style>
 </head>
 <body>
     <header>
         <h1>Welcome to My Page!</h1>
-        <nav>
-            <ul>
-                <li><a href="research/">Research</a></li>
-                <li><a href="projects/">Projects</a></li>
-                <li><a href="other_thoughts/">Other Thoughts</a></li>
-            </ul>
-        </nav>
     </header>
     <main>
         <img src="images/homepage_banner.png" alt="Homepage Banner" class="homepage-banner">
+
+        <section class="hierarchy-diagram">
+            <h2>Explore My Content</h2>
+            <div class="level-1">
+                <a href="research/digitalization_in_engineering/" class="button-link">Research</a>
+                <a href="projects/newprojects/" class="button-link">Projects</a>
+                <a href="other_thoughts/digital_societies/" class="button-link">Other Thoughts</a>
+            </div>
+
+            <h3>Research Areas</h3>
+            <div class="level-2">
+                <a href="research/digitalization_in_engineering/" class="button-link">Digitalization in Engineering</a>
+                <a href="research/structural_analysis/" class="button-link">Structural Analysis</a>
+            </div>
+
+            <h4>Digitalization in Engineering Topics</h4>
+            <div class="level-3">
+                <a href="research/digitalization_in_engineering/iot_shm/" class="button-link">IoT & SHM</a>
+                <a href="research/digitalization_in_engineering/bim_lca/" class="button-link">BIM & LCA</a>
+                <a href="research/digitalization_in_engineering/ai_ml/" class="button-link">AI & ML</a>
+            </div>
+
+            <h3>Project Categories</h3>
+            <div class="level-2">
+                <a href="projects/newprojects/" class="button-link">New Projects</a>
+                <a href="projects/oldprojects/" class="button-link">Old Projects</a>
+            </div>
+
+            <h3>Other Thoughts Categories</h3>
+            <div class="level-2">
+                <a href="other_thoughts/digital_societies/" class="button-link">Digital Societies</a>
+                <a href="other_thoughts/semantics_language/" class="button-link">Semantics & Language</a>
+            </div>
+        </section>
+
         <p>I am a multidisciplinary engineer with expertise in technologies for digital transformation like <b>IoT and web application</b>, <b>Machine Learning</b>, <b>Civil Engineering</b>, and <b>Digital Marketing</b>. I have a strong background in data analysis and visualization, and I am passionate about using technology to solve real-world problems.</p>
         <p>My research interests include the integration of IoT and Machine Learning in <b>smart cities</b>, as well as the application of <b>digital twins</b> in urban planning. I am also interested in the intersection of technology and sustainability, and how we can use <b>data</b> to create more efficient and <strong>sustainable cities</strong>.</p>
     </main>
