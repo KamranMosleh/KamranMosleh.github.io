@@ -47,7 +47,7 @@ img {
 }
 
 .homepage-banner {
-    max-width: 60%; /* Set the banner width to 60% of its container */
+    max-width: 40%; /* Set the banner width to 60% of its container */
     height: auto;    /* Maintain aspect ratio */
     display: block;   /* Ensure it behaves as a block-level element */
     margin: 20px auto; /* Center the banner with top and bottom margin */
