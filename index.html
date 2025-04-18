@@ -43,12 +43,24 @@
             height: 30px;
         }
 
-        .level-1 {
+        .level-1-nodes .node {
+            background-color: #e0f7fa; /* Light Cyan for Level 1 */
+        }
+
+        .level-2-nodes .node {
+            background-color: #f0f4c3; /* Light Lime for Level 2 */
+        }
+
+        .level-3-nodes .node {
+            background-color: #fce4ec; /* Light Pink for Level 3 (buttons) */
+        }
+
+        .level-1-nodes {
             display: flex;
             gap: 50px;
         }
 
-        .level-2 {
+        .level-2-nodes {
             display: flex;
             gap: 30px;
         }
@@ -67,20 +79,24 @@
         <section class="hierarchy-diagram">
             <h2>Explore My Content</h2>
 
-            <div class="level-1">
+            <div class="level-1-nodes">
                 <div class="branch">
                     <div class="node">Research</div>
                     <div class="vertical-line"></div>
-                    <div class="level-2">
+                    <div class="level-2-nodes">
                         <div class="branch">
                             <div class="node">Digitalization in Engineering</div>
                             <div class="vertical-line"></div>
-                            <div class="node"><a href="research/digitalization_in_engineering/iot_shm/">IoT & SHM</a></div>
-                            <div class="node"><a href="research/digitalization_in_engineering/bim_lca/">BIM & LCA</a></div>
-                            <div class="node"><a href="research/digitalization_in_engineering/ai_ml/">AI & ML</a></div>
+                            <div class="level-3-nodes">
+                                <div class="node"><a href="research/digitalization_in_engineering/iot_shm/">IoT & SHM</a></div>
+                                <div class="node"><a href="research/digitalization_in_engineering/bim_lca/">BIM & LCA</a></div>
+                                <div class="node"><a href="research/digitalization_in_engineering/ai_ml/">AI & ML</a></div>
+                            </div>
                         </div>
                         <div class="branch">
-                            <div class="node"><a href="research/structural_analysis/">Structural Analysis</a></div>
+                            <div class="level-3-nodes">
+                                <div class="node"><a href="research/structural_analysis/">Structural Analysis</a></div>
+                            </div>
                         </div>
                     </div>
                 </div>
@@ -88,12 +104,16 @@
                 <div class="branch">
                     <div class="node">Projects</div>
                     <div class="vertical-line"></div>
-                    <div class="level-2">
+                    <div class="level-2-nodes">
                         <div class="branch">
-                            <div class="node"><a href="projects/newprojects/">New Projects</a></div>
+                            <div class="level-3-nodes">
+                                <div class="node"><a href="projects/newprojects/">New Projects</a></div>
+                            </div>
                         </div>
                         <div class="branch">
-                            <div class="node"><a href="projects/oldprojects/">Old Projects</a></div>
+                            <div class="level-3-nodes">
+                                <div class="node"><a href="projects/oldprojects/">Old Projects</a></div>
+                            </div>
                         </div>
                     </div>
                 </div>
@@ -101,12 +121,16 @@
                 <div class="branch">
                     <div class="node">Other Thoughts</div>
                     <div class="vertical-line"></div>
-                    <div class="level-2">
+                    <div class="level-2-nodes">
                         <div class="branch">
-                            <div class="node"><a href="other_thoughts/digital_societies/">Digital Societies</a></div>
+                            <div class="level-3-nodes">
+                                <div class="node"><a href="other_thoughts/digital_societies/">Digital Societies</a></div>
+                            </div>
                         </div>
                         <div class="branch">
-                            <div class="node"><a href="other_thoughts/semantics_language/">Semantics & Language</a></div>
+                            <div class="level-3-nodes">
+                                <div class="node"><a href="other_thoughts/semantics_language/">Semantics & Language</a></div>
+                            </div>
                         </div>
                     </div>
                 </div>

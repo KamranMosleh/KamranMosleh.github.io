@@ -23,17 +23,8 @@ nav ul li {
 
 nav ul li a {
     text-decoration: none;
-    color: #2c4550;
+    color: #333;
     font-weight: bold;
-    padding: 8px 15px; /* Reduced padding */
-    background-color: #f0f0f0; /* Default button background */
-    border-radius: 3px; /* Reduced border-radius */
-    font-size: 0.9em; /* Reduced font size */
-    border: 1px solid #ccc;
-}
-
-nav ul li a:hover {
-    background-color: #ddd;
 }
 
 main {
@@ -76,7 +67,7 @@ footer {
     border: 1px solid #ccc;
     border-radius: 5px;
     text-align: center;
-    background-color: #f9f9f9; /* Light background for nodes */
+    background-color: #f9f9f9; /* Default background for nodes */
 }
 
 .node a {
@@ -91,12 +82,24 @@ footer {
     height: 30px;
 }
 
-.level-1 {
+.level-1-nodes {
     display: flex;
     gap: 50px;
 }
 
-.level-2 {
+.level-1-nodes .node {
+    background-color: #e0f7fa; /* Light Cyan for Level 1 */
+}
+
+.level-2-nodes {
     display: flex;
     gap: 30px;
+}
+
+.level-2-nodes .node {
+    background-color: #f0f4c3; /* Light Lime for Level 2 */
+}
+
+.level-3-nodes .node {
+    background-color: #fce4ec; /* Light Pink for Level 3 (buttons) */
 }
