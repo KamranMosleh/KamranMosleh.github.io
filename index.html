@@ -31,28 +31,10 @@
             text-align: center;
         }
 
-        .node a {
-            text-decoration: none;
-            color: #333;
-            font-weight: bold;
-        }
-
         .vertical-line {
             width: 1px;
             background-color: #ccc;
             height: 30px;
-        }
-
-        .level-1-nodes .node {
-            background-color: #e0f7fa; /* Light Cyan for Level 1 */
-        }
-
-        .level-2-nodes .node {
-            background-color: #f0f4c3; /* Light Lime for Level 2 */
-        }
-
-        .level-3-nodes .node {
-            background-color: #fce4ec; /* Light Pink for Level 3 (buttons) */
         }
 
         .level-1-nodes {
@@ -60,9 +42,43 @@
             gap: 50px;
         }
 
+        .level-1-nodes .node {
+            background-color: #e0f7fa; /* Light Cyan for Level 1 */
+        }
+
         .level-2-nodes {
             display: flex;
             gap: 30px;
+        }
+
+        .level-2-nodes .node {
+            background-color: #f0f4c3; /* Light Lime for Level 2 */
+            padding: 8px 15px; /* Button padding */
+        }
+
+        .level-2-nodes .node a {
+            text-decoration: none;
+            color: #333;
+            font-weight: bold;
+            display: block; /* Make the entire node clickable */
+        }
+
+        .level-3-nodes {
+            display: flex;
+            gap: 15px;
+        }
+
+        .level-3-nodes .node {
+            background-color: #fce4ec; /* Light Pink for Level 3 (buttons) */
+            padding: 6px 12px; /* Button padding */
+            font-size: 0.9em;
+        }
+
+        .level-3-nodes .node a {
+            text-decoration: none;
+            color: #333;
+            font-weight: bold;
+            display: block; /* Make the entire node clickable */
         }
     </style>
 </head>
@@ -85,7 +101,7 @@
                     <div class="vertical-line"></div>
                     <div class="level-2-nodes">
                         <div class="branch">
-                            <div class="node">Digitalization in Engineering</div>
+                            <div class="node"><a href="digitalization_in_engineering/">Digitalization in Engineering</a></div>
                             <div class="vertical-line"></div>
                             <div class="level-3-nodes">
                                 <div class="node"><a href="research/digitalization_in_engineering/iot_shm/">IoT & SHM</a></div>

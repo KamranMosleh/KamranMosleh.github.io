@@ -74,6 +74,7 @@ footer {
     text-decoration: none;
     color: #333;
     font-weight: bold;
+    display: block; /* Make the entire node clickable */
 }
 
 .vertical-line {
@@ -89,6 +90,11 @@ footer {
 
 .level-1-nodes .node {
     background-color: #e0f7fa; /* Light Cyan for Level 1 */
+    padding: 10px 20px; /* Standard padding for text-only boxes */
+}
+
+.level-1-nodes .node a {
+    /* No specific styling for links in Level 1 */
 }
 
 .level-2-nodes {
@@ -98,8 +104,30 @@ footer {
 
 .level-2-nodes .node {
     background-color: #f0f4c3; /* Light Lime for Level 2 */
+    padding: 8px 15px; /* Button padding */
+}
+
+.level-2-nodes .node a {
+    display: block; /* Make the entire node clickable */
+    text-decoration: none;
+    color: #333;
+    font-weight: bold;
+}
+
+.level-3-nodes {
+    display: flex;
+    gap: 15px;
 }
 
 .level-3-nodes .node {
     background-color: #fce4ec; /* Light Pink for Level 3 (buttons) */
+    padding: 6px 12px; /* Button padding */
+    font-size: 0.9em;
+}
+
+.level-3-nodes .node a {
+    display: block; /* Make the entire node clickable */
+    text-decoration: none;
+    color: #333;
+    font-weight: bold;
 }
